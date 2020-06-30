@@ -1,0 +1,13 @@
+# editorconfig.org
+root = true
+
+[*]
+indent-indent_style = space #enforcing space
+indent_size = 2             #two-sace indetation style
+end_of_line = lf            #use line feed at the end of line
+charset = utf-8
+trim_trailing_whitespace = true #trim line space
+insert_final_newline = true #insert new line automatically with editor config
+
+[*.md]
+trim_trailing_whitespace = false
