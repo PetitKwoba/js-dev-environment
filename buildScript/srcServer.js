@@ -7,7 +7,7 @@ var port = 3000; //port that will used
 var app = express(); //instance of express set to variable app
 
 app.get('/', function(req, res){  //routes express shouls handle: references to the root set to function that takes req and res
-  res.sendFile(path.join(_dirname, '../src/index.html'));//calling res.sendFile and use path to join directory name that we are currently running in: joined together with the src dirrectory(../src/index.html)
+  res.sendFile(path.join(__dirname, '../src/index.html'));//calling res.sendFile and use path to join directory name that we are currently running in: joined together with the src dirrectory(../src/index.html)
 });
 
 app.listen(port, function(err) { //express to listen to port defined above and adding error handling
