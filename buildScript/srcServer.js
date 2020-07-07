@@ -14,6 +14,6 @@ app.listen(port, function(err) { //express to listen to port defined above and a
   if (err) {
     console.log(err)
   } else {
-    open('http://localhost:' + port);
+    open('http://localhost:' + port);//opening the application on the port
   }
-}) //the do: "node buildScript/srcServer.js" to run the file
+}); //the do: "node buildScript/srcServer.js" to run the file
