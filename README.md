@@ -8,4 +8,4 @@ install nsp in order to check for security vulnerability (npm install -g nsp)
 to check for security vulnerability (nsp check)
 
 to install localtunnel globally (npm install localtunnel -g)
-to run localtunnel 
+to run localtunnel (lt -h "https://serverless.social" -p PORT) eg (lt -h "https://serverless.social" -p 3000)
