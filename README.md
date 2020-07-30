@@ -41,10 +41,13 @@ simpler debugging
 better docd
 simple
 
-###npm Script
+###npm Script (package.json)
 in the package.json add ("start": "node buildSripts/srcServer.js") in the script braces
 to start stimply type (npm start)
 to share, simply run "npm run share"
 
-#transpilling
-used babel
+##transpilling 
+used babel in (.babelrc)
+
+##bundling
+used webpack in (webpack.config.dev.js)
