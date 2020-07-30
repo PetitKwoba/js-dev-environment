@@ -3,7 +3,7 @@ import express from 'express'; //calling express
 import path from 'path'; //reference to path
 import open from 'open'; //will be used to open our file in the browser
 import webpack from 'webpack';
-import config from '../src/index.html';
+import config from '../src/index.js';
 
 const port = 3000; //port that will used 
 const app = express(); //instance of express set to variable app

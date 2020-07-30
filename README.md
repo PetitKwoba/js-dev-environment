@@ -38,7 +38,7 @@ Leverage world'd largest package manager
 use tools directly
 No need for separate plugins hence we will use it
 simpler debugging
-better docd
+better docd 
 simple
 
 ###npm Script (package.json)
