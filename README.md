@@ -44,3 +44,4 @@ simple
 ###npm Script
 in the package.json add ("start": "node buildSripts/srcServer.js") in the script braces
 to start stimply type (npm start)
+to share, simply run npm run share
