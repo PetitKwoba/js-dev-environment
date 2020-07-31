@@ -51,3 +51,10 @@ used babel in (.babelrc)
 
 ##bundling
 used webpack in (webpack.config.dev.js)
+
+##Linting
+###Configformart
+###built-in-rules
+###warnings or errors
+###plugind
+###use preset insteadd
