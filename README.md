@@ -56,5 +56,8 @@ used webpack in (webpack.config.dev.js)
 ###Configformart
 ###built-in-rules
 ###warnings or errors
-###plugind
+###plugins
 ###use preset insteadd
+
+eslint-watch- Eslint wrapper that adds file watch
+used plain Eslint watch

@@ -5,6 +5,7 @@ import open from 'open'; //will be used to open our file in the browser
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
 
+/* eslint-disable no-console */
 const port = 3000; //port that will used 
 const app = express(); //instance of express set to variable app
 const compiler = webpack(config); //calling webpack and passing config referencing to webpack compiler
