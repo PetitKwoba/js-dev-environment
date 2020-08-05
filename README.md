@@ -61,3 +61,15 @@ used webpack in (webpack.config.dev.js)
 
 eslint-watch- Eslint wrapper that adds file watch
 used plain Eslint watch
+
+##testing
+###unit testing
+1. Testing frameworks(mocha(no assertion library), jasmine, tape QUnit, AVA,Jest[react devs]])
+Mocha
+2. Asertion library( chai, expect) [declaring what to expect)
+chai
+3. Helper library(JSDOM:run DOM tests without a browser, Cheerion: jquery for the server)
+JSDOM
+4. where to run tests (browser, headless browser(phantomJS: no visible interface), in-memory DOM(JSDOM)
+JSDOM
+5. where to put test files (cetrealized, Alongside)
