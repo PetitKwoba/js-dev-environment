@@ -76,3 +76,5 @@ JSDOM(node)
 Alongside
 6. tests will run automatic
 upon save
+
+##contious intergration
