@@ -77,4 +77,6 @@ Alongside
 6. tests will run automatic
 upon save
 
-##contious intergration
+##contious intergration(appveyor, jekins, circleCI, semaphore, snapCI)
+used Rravis and Appveyor
+can allow automated deployment
