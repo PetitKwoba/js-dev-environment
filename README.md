@@ -71,5 +71,8 @@ chai
 3. Helper library(JSDOM:run DOM tests without a browser, Cheerion: jquery for the server)
 JSDOM
 4. where to run tests (browser, headless browser(phantomJS: no visible interface), in-memory DOM(JSDOM)
-JSDOM
+JSDOM(node)
 5. where to put test files (cetrealized, Alongside)
+Alongside
+6. tests will run automatic
+upon save
