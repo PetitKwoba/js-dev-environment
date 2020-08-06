@@ -81,3 +81,4 @@ upon save
 used Rravis and Appveyor
 can allow automated deployment
 Sign up or sign github account and go to travis website to signup using github
+git push --set-upstream origin js-developemt-ent to push to branch
