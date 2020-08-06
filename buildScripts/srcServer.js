@@ -19,6 +19,15 @@ app.get('/', function(req, res) { //routes express shouls handle: references to 
     res.sendFile(path.join(__dirname, '../src/index.html')); //calling res.sendFile and use path to join directory name that we are currently running in: joined together with the src dirrectory(../src/index.html)
 });
 
+app.get('/users', function(req, res) {
+    //Hard coding for simplicity, pretend this hits a real database
+    res.json([
+        { "id": 1, "firstName": "Bob", "lastName": "smith", "email": "bob@gmail.com" },
+        { "id": 2, "firstName": "Tony", "lastName": "Norton", "email": "tnorton@yahoo.com" },
+        { "id": 3, "firstName": "Lee", "lastName": "Tinah", "email": "lee.tinah@hotmail.com" }
+    ]);
+});
+
 app.listen(port, function(err) { //express to listen to port defined above and adding error handling
     if (err) {
         console.log(err)
