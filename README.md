@@ -80,3 +80,4 @@ upon save
 ##contious intergration(appveyor, jekins, circleCI, semaphore, snapCI)
 used Rravis and Appveyor
 can allow automated deployment
+Sign up or sign github account and go to travis website to signup using github
