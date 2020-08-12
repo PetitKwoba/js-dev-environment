@@ -1,23 +1,26 @@
 {
-
     "name": "javascript-development-environment",
     "version": "1.0.0",
     "description": "JavaScript development environment ",
     "scripts": {
-
         "prestart": "babel-node buildScripts/startMessage.js",
-        "start": "npm-run-all --parallel open:src lint:watch test:watch",
+        "start": "npm-run-all --parallel open:src lint:watch test:watch start-mockapi",
         "open:src": "babel-node buildScripts/srcServer.js",
         "lint": "esw webpack.cofig.* src buildScripts --color",
         "lint:watch": "npm run lint -- --watch",
         "localtunnel": "lt -h http://serverless.social -p 3000",
         "share": "npm-run-all --parallel open:src localtunnel",
         "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
-        "test:watch": "npm run test -- --watch"
+        "test:watch": "npm run test -- --watch",
+        "generate-mock-data": "babel-node buildScripts/generateMockData",
+        "prestart-mockapi": "npm run generate-mock-data",
+        "start-mockapi": "json-server --watch src/api/db.json --port 3001"
+
     },
     "author": "Petit Emmanuel",
     "license": "MIT",
     "dependencies": {
+        "faker": "^4.1.0",
         "whatwg-fetch": "1.0.0",
         "xxx": "0.0.1"
     },
@@ -25,6 +28,7 @@
         "babel-cli": "6.16.0",
         "babel-core": "6.17.0",
         "babel-loader": "6.2.5",
+        "babel-preset-env": "^1.7.0",
         "babel-preset-latest": "6.16.0",
         "babel-register": "6.16.3",
         "chai": "3.5.0",

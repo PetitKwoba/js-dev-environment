@@ -1,11 +1,14 @@
 import 'whatwg-fetch';
+import getBaseUrl from './baseUrl'; //importing base Url
+
+const baseUrl = getBaseUrl();
 
 export function getUsers() {
-    return getUsers('users');
+    return get('users');
 }
-
-function GET(url) {
-    return fetch(url).then(onSucces, onError)
+//this cetralied API proxy abstracts away http API
+function get(url) {
+    return fetch(baseUrl + '/' + url).then(onSucces, onError) //baseUrladded
 }
 
 function onSucces(response) {

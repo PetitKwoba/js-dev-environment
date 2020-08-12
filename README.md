@@ -103,3 +103,15 @@ isomorphic-fetch
 xhr
 Super agent
 Axios
+
+##Http mock
+Nock
+static JSON
+Create delopment server (api-mock, Json server,Json server + Json schema faker(generates fake data), Browersync, Express)
+
+here we will;
+1. Declare our schema using Json Schema
+2. Generate random data unsing Faker.js, chance.js, regexp.js
+3. serve data via api using JSON Server
+
+run(npm install -g json-server)
