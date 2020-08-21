@@ -115,3 +115,11 @@ here we will;
 3. serve data via api using JSON Server
 
 run(npm install -g json-server)
+
+#Project structure
+1. project structure (javascript belongs to .js file)
+2. json should be injected to json from the server into the app if you want the app to behave differently to different users
+consider organizing the code by feature instead of file type
+3. Extract logic into POJOs(plain old javascrpt objects) not framework based objects
+
+#Demo app
