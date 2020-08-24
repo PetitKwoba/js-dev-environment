@@ -1,1 +1,16 @@
-{"users":[{"id":53922184,"firstName":"Reyna","lastName":"Farrell","email":"Alberta.Parisian71@hotmail.com"},{"id":41431640,"firstName":"Moriah","lastName":"Vandervort","email":"Tessie_Lubowitz47@yahoo.com"},{"id":89098412,"firstName":"Merritt","lastName":"Boyle","email":"Vernie47@yahoo.com"},{"id":88998840,"firstName":"Aurore","lastName":"Eichmann","email":"Kellen.Berge2@yahoo.com"}]}
+{
+  "users": [
+    {
+      "id": 41431640,
+      "firstName": "Moriah",
+      "lastName": "Vandervort",
+      "email": "Tessie_Lubowitz47@yahoo.com"
+    },
+    {
+      "id": 88998840,
+      "firstName": "Aurore",
+      "lastName": "Eichmann",
+      "email": "Kellen.Berge2@yahoo.com"
+    }
+  ]
+}

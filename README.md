@@ -3,33 +3,33 @@ JavaScript environment from plurasight course
 
 make sure you installed node
 
-##Adding express  
+## Adding express  
 used express to serve the project locally (npm install express)
 to run node (node buildScript.srcServer.js)
 
-##nsp check for security
+## nsp check for security
 install nsp in order to check for security vulnerability (npm install -g nsp)
 to check for security vulnerability (nsp check)
 
-##localtunnnel
+## localtunnnel
 to install localtunnel globally (npm install localtunnel -g)
 to run localtunnel (lt -h "https://serverless.social" -p PORT) eg (lt -h "https://serverless.social" -p 3000)
 NOTE: the address keeps changind everytime you run the command
 
-##Automation
+## Automation
 you can you grunt, gulp or npm Scripts
-###grunt
+### grunt
 configured under a grunt file
 uses plugins
 writes intermediary files between steps
 
-###gulp
+### gulp
 improves on gulp
 in-memory streams
 fast
 code over configuration (you write actual js scripts)
 
-###npm Scripts
+### npm Scripts
 Declared in package.json file
 leverage your OS' command line
 You can call separate Node scripts
@@ -41,29 +41,29 @@ simpler debugging
 better docd 
 simple
 
-###npm Script (package.json)
+### npm Script (package.json)
 in the package.json add ("start": "node buildSripts/srcServer.js") in the script braces
 to start stimply type (npm start)
 to share, simply run "npm run share"
 
-##transpilling 
+## transpilling 
 used babel in (.babelrc)
 
-##bundling
+## bundling
 used webpack in (webpack.config.dev.js)
 
-##Linting
-###Configformart
-###built-in-rules
-###warnings or errors
-###plugins
-###use preset insteadd
+## Linting
+### Configformart
+### built-in-rules
+### warnings or errors
+### plugins
+### use preset insteadd
 
 eslint-watch- Eslint wrapper that adds file watch
 used plain Eslint watch
 
-##testing
-###unit testing
+## testing
+### unit testing
 1. Testing frameworks(mocha(no assertion library), jasmine, tape QUnit, AVA,Jest[react devs]])
 Mocha
 2. Asertion library( chai, expect) [declaring what to expect)
@@ -77,7 +77,7 @@ Alongside
 6. tests will run automatic
 upon save
 
-##contious intergration(appveyor, jekins, circleCI, semaphore, snapCI)
+## contious intergration(appveyor, jekins, circleCI, semaphore, snapCI)
 used Rravis and Appveyor
 can allow automated deployment
 Sign up or sign github account and go to travis website to signup using github
@@ -87,24 +87,24 @@ Appveyor
 signup for Appveyor via there site and click add then click on new build
 
  
-##HTTP calls(libraries)
-###node
+## HTTP calls(libraries)
+### node
 http
 request
 
-###browser
+### browser
 XMLHttpRequest(XHR)
 jQuery
 Framework-based
 Fetch
 
-###node& browser
+### node& browser
 isomorphic-fetch
 xhr
 Super agent
 Axios
 
-##Http mock
+## Http mock
 Nock
 static JSON
 Create delopment server (api-mock, Json server,Json server + Json schema faker(generates fake data), Browersync, Express)
@@ -116,10 +116,55 @@ here we will;
 
 run(npm install -g json-server)
 
-#Project structure
+# Project structure
 1. project structure (javascript belongs to .js file)
 2. json should be injected to json from the server into the app if you want the app to behave differently to different users
 consider organizing the code by feature instead of file type
 3. Extract logic into POJOs(plain old javascrpt objects) not framework based objects
 
-#Demo app
+# Demo app
+1. minification to speed page load
+2. Source maps generated for debuging in production
+3. dynamic HTML handling for production specific concerns
+4. Cache busting to ensure that users get the latest version of our product
+5. Bundle splitting so that does not have to download entire application when just part of it changes 
+6. Error logging so that not one bugs there way into production
+
+to build the app run (npm run build)
+
+# Referencing bundeled assets in HTML
+1. hard code
+2. manipulate via node
+3. html-webpack-plugin will use this in webpack.config.prod.js
+
+## cache busting
+ webpack-md5-hash
+
+# Error logging
+1. we'll use TrackJS 
+2. Sentry
+3. New Relic
+4. Raygun
+
+# The path to production
+## npm start(deployment)
+## npm run build (production build)
+## npm run deploy ( production deploy)
+
+# start kit update options
+
+
+1. Yeomen
+commit all code to source control system
+Rerun the generator to existing project
+Resolve conflicts
+
+2. Github
+Host in github
+fork starter kit for new project
+pull changes from master
+
+3. npm
+Encapsulate kit in npm package
+update npm package to recieve latest changes
+

@@ -14,9 +14,11 @@ function getQueryStringParamaterName(name, url) {
 }*/
 
 export default function getBaseUrl() {
-    return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://mysterious-dawn-16770.herokuapp.com/';
+    return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://protected-fortress-12459.herokuapp.com/';
 }
 
+
+//Getting paramaters from URL
 function getQueryStringParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");

@@ -46,9 +46,9 @@ const port = 3000;
 const app = express();
 
 app.use(express.static('dist'));
-app.use(compression());
+app.use(compression()); //Enalr gzip compression in express
 
-app.get('*', function(req, res) {
+app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
